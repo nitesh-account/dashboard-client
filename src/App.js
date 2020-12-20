@@ -3,7 +3,7 @@ import Dashboard from './Pages/dashboard'
 import Analytics from './Pages/analytics'
 import List from './Pages/randomlist'
 
-import { Route, BrowserRouter as Router, Switch} from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom';
 
 class App extends Component {
     

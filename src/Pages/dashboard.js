@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+
+import { Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom';
 import Loader from '../Pages/common/loader/loader'
 
 import { postRandomData, resetRandomData, deleteRandomData, expireRandomData } from '../redux/actions'
@@ -74,7 +76,8 @@ class Dashboard extends Component {
                             <div className="card-body">
                                 <h5 className="card-title">See Analytics</h5>
                                 <p className="card-text">Analytics button will go to other page and will display line chart and pie chart</p>
-                                <a href="http://localhost:3000/analytics" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Analytics</a>
+                                {/* <a href="http://localhost:3000/analytics" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Analytics</a> */}
+                                <Link to="/analytics" target="_blank" className="btn btn-primary">Analytics</Link>
                             </div>
                         </div>
                     </div>
@@ -83,7 +86,8 @@ class Dashboard extends Component {
                             <div className="card-body">
                                 <h5 className="card-title">Random data List</h5>
                                 <p className="card-text">Displays all the list of random records.</p>
-                                <a href="http://localhost:3000/list" target="_blank" rel="noopener noreferrer" className="btn btn-primary">List</a>
+                                {/* <a href="http://localhost:3000/list" target="_blank" rel="noopener noreferrer" className="btn btn-primary">List</a> */}
+                                <Link to="/list" target="_blank" className="btn btn-primary">List</Link>
                             </div>
                         </div>
                     </div>
