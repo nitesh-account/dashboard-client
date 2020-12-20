@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Dashboard from './Pages/dashboard'
 import Analytics from './Pages/analytics'
-import RandomList from './Pages/randomlist'
+import List from './Pages/randomlist'
 
 import { Route, BrowserRouter as Router, Switch} from 'react-router-dom';
 
@@ -12,7 +12,7 @@ class App extends Component {
             <Router>     
                 <Switch>                
                 <Route path="/analytics" component={Analytics} />
-                <Route path="/list" component={RandomList} />
+                <Route path="/list" component={List} />
                 <Route path="/"  exact component={Dashboard} />
                 </Switch>
             </Router> 
